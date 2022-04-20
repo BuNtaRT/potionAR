@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Valet" size="1.000000 1.570333" />
+    <ImageTarget name="T" size="1.000000 1.590909" />
+    <ImageTarget name="King" size="1.000000 1.567204" />
+    <ImageTarget name="Dama" size="1.000000 1.557214" />
+    <ImageTarget name="Back" size="1.000000 1.603550" />
+    <ImageTarget name="10" size="1.000000 1.531088" />
+  </Tracking>
+</QCARConfig>
