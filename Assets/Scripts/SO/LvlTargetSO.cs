@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New lvl target", menuName = "Lvl/Lvl target")]
 public class LvlTargetSO : ScriptableObject
 {
-    public List<ItemBase> TargetItems = new List<ItemBase>();
+    public List<IItem> TargetItems = new List<IItem>();
 }

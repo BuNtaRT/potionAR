@@ -10,5 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b940be899a81f5b4fa34ddda8e52d141, type: 3}
-  m_Name: New recipe
+  m_Name: HealPotionRecipe
   m_EditorClassIdentifier: 
+  ItemsForCraft:
+  - Item: {fileID: 11400000, guid: 961ceac0ebb32d140ab34b144bf7539b, type: 2}
+    Temperature: 0
+  - Item: {fileID: 11400000, guid: a8c167a9aa8857a438ccefec67af2f83, type: 2}
+    Temperature: -30
+  Result: {fileID: 11400000, guid: e7184f0a337f1904b86e704ef8880e32, type: 2}
+  TimeRecipe: 90

@@ -2,26 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-public enum TypeObj : byte
-{
-    Mushrooms
-}
+
 
 public class ObjPool : MonoBehaviour
 {
     private GameObject _overSpawnCell;
     private GameObject _mainContainer;
     public static ObjPool Instance { get; private set; }
-
-    private void Awake()
-    {
-        if (Instance == null)
-            Instance = this;
-        else
-            Debug.LogError("Instance obj over 1");
-
-        GlobalEventsManager.OnPause.AddListener(PauseSub);
-    }
 
     private void PauseSub(PauseStatus status, bool enable) 
     {
@@ -53,8 +40,16 @@ public class ObjPool : MonoBehaviour
     private List<ObjectsInfo> _objectsInfo = new List<ObjectsInfo>();
     private Dictionary<TypeObj, Queue<GameObject>> poolDictionary;
 
-    private void Start()
+    private void Awake()
     {
+
+        if (Instance == null)
+            Instance = this;
+        else
+            Debug.LogError("Instance obj over 1");
+
+        GlobalEventsManager.OnPause.AddListener(PauseSub);
+
         _mainContainer = new GameObject();
         _mainContainer.name = "SpawnerContainer";
 
@@ -83,6 +78,7 @@ public class ObjPool : MonoBehaviour
 
     public Transform SpawnObj(TypeObj type, Vector3 position) 
     {
+        Debug.Log(poolDictionary);
         if (poolDictionary[type].Count != 0)
         {
             GameObject temp = poolDictionary[type].Dequeue();

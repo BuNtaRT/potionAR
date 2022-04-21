@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b940be899a81f5b4fa34ddda8e52d141, type: 3}
+  m_Name: AwkwardPorionRecipe
+  m_EditorClassIdentifier: 
+  ItemsForCraft:
+  - Item: {fileID: 11400000, guid: 0e16072ecacd21944a4d489208e0132c, type: 2}
+    Temperature: 80
+  - Item: {fileID: 11400000, guid: 50cbb227bfa26ae4c877e0069a124df5, type: 2}
+    Temperature: -80
+  Result: {fileID: 11400000, guid: 961ceac0ebb32d140ab34b144bf7539b, type: 2}
+  TimeRecipe: 60

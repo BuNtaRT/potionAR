@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b940be899a81f5b4fa34ddda8e52d141, type: 3}
-  m_Name: Heal
+  m_Name: FireResistPotionRecipe
   m_EditorClassIdentifier: 
   ItemsForCraft:
-  - ItemBase: {fileID: 0}
+  - Item: {fileID: 11400000, guid: e7184f0a337f1904b86e704ef8880e32, type: 2}
+    Temperature: -90
+  - Item: {fileID: 11400000, guid: 961ceac0ebb32d140ab34b144bf7539b, type: 2}
     Temperature: 0
-  - ItemBase: {fileID: 0}
-    Temperature: 0
-  Result: {fileID: 0}
+  Result: {fileID: 11400000, guid: d17928d15c62fef4da781ed3ac4f89bb, type: 2}
+  TimeRecipe: 160
