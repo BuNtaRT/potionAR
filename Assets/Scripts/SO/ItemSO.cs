@@ -6,9 +6,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New item", menuName = "Item/Item")]
 public class ItemSO : ScriptableObject
 {
-    public string Name;
-    public TypeObj Type;
+    public Sprite     Ico;
+    public string     Name;
+    public TypeObj    Type;
     public GameObject Prefab;
     [Range(-100, 100)]
-    public int Temperature;
+    public int        Temperature;
 }

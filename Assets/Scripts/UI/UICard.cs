@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class UICard : MonoBehaviour
 {
     public static UICard Instance { get; private set; }
+    private Dictionary<Transform, CardInterface> _interfacePool = new Dictionary<Transform, CardInterface>();
+
     private void Awake()
     {
         if (Instance == null)
@@ -14,8 +16,6 @@ public class UICard : MonoBehaviour
         else
             Debug.LogError("Instance UICard over 1");
     }
-
-    private Dictionary<Transform, CardInterface> _interfacePool = new Dictionary<Transform, CardInterface>();
 
     public void AddContent(Transform card) 
     {

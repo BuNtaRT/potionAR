@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a29a2bbfe0efce4699d320a638e0778, type: 3}
   m_Name: FireResistPotion
   m_EditorClassIdentifier: 
+  Ico: {fileID: 21300000, guid: 1b3fec238d3b855428e5afc9bf41ea14, type: 3}
   Name: "\u0417\u0435\u043B\u044C\u0435 \u043E\u0433\u043D\u0435\u0441\u0442\u043E\u0439\u043A\u043E\u0441\u0442\u0438"
   Type: 9
   Prefab: {fileID: 2157122943803876656, guid: 13e1df2e7bca3b14f9fbacc22fcf537b, type: 3}

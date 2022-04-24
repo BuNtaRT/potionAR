@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a29a2bbfe0efce4699d320a638e0778, type: 3}
   m_Name: MutationElixir
   m_EditorClassIdentifier: 
+  Ico: {fileID: 21300000, guid: fe2d64fe1c15e4548948c709227df23f, type: 3}
   Name: "\u042D\u043B\u0438\u043A\u0441\u0438\u0440 \u043C\u0443\u0442\u0430\u0446\u0438\u0439"
   Type: 3
   Prefab: {fileID: 6815823686397132801, guid: 4d0694ecdab8d4a4ba3c70c480a0a294, type: 3}

@@ -10,24 +10,6 @@ public class ObjPool : MonoBehaviour
     private GameObject _mainContainer;
     public static ObjPool Instance { get; private set; }
 
-    private void PauseSub(PauseStatus status, bool enable) 
-    {
-        if (enable) 
-        {
-            if (enable)
-            {
-                _mainContainer.transform.position = new Vector3(0, -10, 0);
-                _mainContainer.transform.localScale = Vector3.zero;
-            }
-            else
-            {
-                _mainContainer.transform.position = Vector3.zero;
-                _mainContainer.transform.localScale = Vector3.one;
-
-            }
-        }
-    }
-
     [Serializable]
     public struct ObjectsInfo 
     {
@@ -42,14 +24,14 @@ public class ObjPool : MonoBehaviour
 
     private void Awake()
     {
-
         if (Instance == null)
             Instance = this;
         else
             Debug.LogError("Instance obj over 1");
+    }
 
-        GlobalEventsManager.OnPause.AddListener(PauseSub);
-
+    private void Start()
+    {
         _mainContainer = new GameObject();
         _mainContainer.name = "SpawnerContainer";
 
@@ -78,7 +60,6 @@ public class ObjPool : MonoBehaviour
 
     public Transform SpawnObj(TypeObj type, Vector3 position) 
     {
-        Debug.Log(poolDictionary);
         if (poolDictionary[type].Count != 0)
         {
             GameObject temp = poolDictionary[type].Dequeue();

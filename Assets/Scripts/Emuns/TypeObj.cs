@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public enum TypeObj : byte
 {
     None,
@@ -15,4 +11,3 @@ public enum TypeObj : byte
     PoisoingPotion,
     FireResistPorion
 }
-

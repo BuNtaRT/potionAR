@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 8360985164940335467}
   - component: {fileID: 2898190498872592190}
   m_Layer: 0
-  m_Name: mushroomblend
+  m_Name: Mushroomblend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

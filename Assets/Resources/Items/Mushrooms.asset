@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a29a2bbfe0efce4699d320a638e0778, type: 3}
   m_Name: Mushrooms
   m_EditorClassIdentifier: 
+  Ico: {fileID: 21300000, guid: d60a9168bba125841bc63196f50fffca, type: 3}
   Name: "\u0413\u0440\u0438\u0431"
   Type: 1
   Prefab: {fileID: 8738952968930786882, guid: a34bbe05d3ebe8f4a9e642f552d38445, type: 3}
-  Temperature: 30
+  Temperature: 38

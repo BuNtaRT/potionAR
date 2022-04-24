@@ -5,18 +5,15 @@ using UnityEngine;
 public class Crystal : MonoBehaviour
 {
     [SerializeField]
-    private float _tempFactor = 1;
+    private float     _tempFactor = 1;
     [SerializeField]
-    private int _updateSteep = 5;
-    private int _updateCount = 0;
+    private int       _updateSteep = 5;
+    private int       _updateCount = 0;
     private Transform _transform;
 
     private Dictionary<CardObj,Transform> _modificationObj = new Dictionary<CardObj, Transform>();
 
-    private void Awake()
-    {
-        _transform = transform;
-    }
+    private void Awake() => _transform = transform;
 
     public void AddObj(CardObj obj) 
     {
@@ -36,7 +33,6 @@ public class Crystal : MonoBehaviour
     private void FixedUpdate()
     {
         _updateCount++;
-
         if (_updateSteep <= _updateCount)
         {
             _updateCount = 0;
@@ -48,9 +44,24 @@ public class Crystal : MonoBehaviour
                     if (distance <= 1)
                         distance = 1;
                     item.Key.Temperature += (int)(_tempFactor / distance);
-                    Debug.LogWarning("temp "+ item.Key.Temperature + " operation = " + (int)(_tempFactor / distance));
                 }
             }
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag(Tags.ITEM))
+        {
+            CardObj card = other.GetComponent<CardObj>();
+            if(card.GetItem() != null)
+                AddObj(card);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag(Tags.ITEM))
+            RemoveObj(other.GetComponent<CardObj>());
     }
 }

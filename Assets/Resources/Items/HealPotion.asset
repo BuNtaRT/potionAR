@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a29a2bbfe0efce4699d320a638e0778, type: 3}
   m_Name: HealPotion
   m_EditorClassIdentifier: 
+  Ico: {fileID: 21300000, guid: 629901e81d21b3648bbf629672c1aa77, type: 3}
   Name: "\u0417\u0435\u043B\u044C\u0435 \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u044F"
   Type: 4
   Prefab: {fileID: 8115725599914410622, guid: 573066ce426ba8249a9b49f1f7468677, type: 3}

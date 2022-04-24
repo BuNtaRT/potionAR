@@ -11,7 +11,7 @@ public class CardInterface : MonoBehaviour
     public Text Status;
 
     public void SetTemperatureText(string text) => TempText.text = text;
-    public void SetTemperatureNum(string text) => TempNum.text = text+ "°";
-    public void SetItemName(string text) => ItemName.text = text;
-    public void SetStatus(string text) => Status.text = text;
+    public void SetTemperatureNum(string text) =>  TempNum.text = text+ "°";
+    public void SetItemName(string text) =>        ItemName.text = text;
+    public void SetStatus(string text) =>          Status.text = text;
 }

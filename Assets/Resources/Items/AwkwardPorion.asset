@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a29a2bbfe0efce4699d320a638e0778, type: 3}
   m_Name: AwkwardPorion
   m_EditorClassIdentifier: 
+  Ico: {fileID: 21300000, guid: c53675cc4a04bf649b13911d9ca409f9, type: 3}
   Name: "\u0417\u0435\u043B\u044C\u0435 \u0431\u0435\u0437 \u044D\u0444\u0444\u0435\u043A\u0442\u043E\u0432"
   Type: 5
   Prefab: {fileID: 8053115721573203675, guid: 225e4398a69f20e469fe321700249975, type: 3}

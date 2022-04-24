@@ -18,4 +18,5 @@ MonoBehaviour:
   - Item: {fileID: 11400000, guid: 961ceac0ebb32d140ab34b144bf7539b, type: 2}
     Temperature: 0
   Result: {fileID: 11400000, guid: d17928d15c62fef4da781ed3ac4f89bb, type: 2}
-  TimeRecipe: 160
+  TimeRecipe: 250
+  Price: 1200

@@ -16,5 +16,19 @@ public class GlobalEventsManager : MonoBehaviour
         }
     }
     //---------------------------------------------------------------------------------------------------
+    public static UnityEvent<Transform> OnActiveCard = new UnityEvent<Transform>();
+    public static void AddActiveCard(Transform card) => OnActiveCard.Invoke(card);
+    //------------------------------------------------
+    public static UnityEvent<Transform> OnDisableCard = new UnityEvent<Transform>();
+    public static void DisableCard(Transform card) => OnDisableCard.Invoke(card);
+    //---------------------------------------------------------------------------------------------------
+    public static UnityEvent<RecipeSO, float> OnTargetComplite = new UnityEvent<RecipeSO, float>();
+    public static void InvokeTargetComplite(RecipeSO item, float clearFactor) => OnTargetComplite.Invoke(item, clearFactor);
+    //---------------------------------------------------------------------------------------------------
+    public static UnityEvent<RecipeSO> OnTargetSet = new UnityEvent<RecipeSO>();
+    public static void InvokeTargetSet(RecipeSO item) => OnTargetSet.Invoke(item);
+    //---------------------------------------------------------------------------------------------------
+    public static UnityEvent<int> OnMoneyChange = new UnityEvent<int>();
+    public static void InvokeMoneyChange(int money) => OnMoneyChange.Invoke(money);
 }
 
