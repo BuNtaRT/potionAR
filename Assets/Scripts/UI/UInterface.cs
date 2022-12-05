@@ -12,7 +12,7 @@ public class UInterface : MonoBehaviour
     [SerializeField]
     private Text  _targetName;
     [SerializeField]
-    private Text _targetMoney;
+    private Text  _targetMoney;
 
     private void Awake()
     {

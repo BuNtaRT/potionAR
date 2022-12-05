@@ -17,14 +17,12 @@ public class Crystal : MonoBehaviour
 
     public void AddObj(CardObj obj) 
     {
-        Debug.LogWarning("add");
         if (!_modificationObj.ContainsKey(obj)) 
             _modificationObj.Add(obj,obj.transform);
     }
 
     public bool RemoveObj(CardObj obj) 
     {
-        Debug.LogWarning("Remove");
         if (_modificationObj.ContainsKey(obj))
             return _modificationObj.Remove(obj);
         return false;
